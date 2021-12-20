@@ -1,0 +1,13 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.background {
+    background: url("../image/xera-background.jpg") no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
