@@ -21,3 +21,9 @@
 .raids > .raid-list .raid-description {
     color: #c4c4c4;
 }
+
+.raids .raid-title > .bonus {
+    font-size: 12px;
+    font-style: italic;
+    color: #ffd700;
+}
