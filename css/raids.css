@@ -1,0 +1,23 @@
+.raids {
+    background-color: rgba(0,0,0,0.9);
+    padding: 0.8rem;
+}
+
+.raids > .title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.raids > .raid-list {
+    margin-top: 1.2rem;
+}
+
+.raids > .raid-list .raid-title,
+.raids > .raid-list .raid-description {
+    padding: 0.4rem;
+}
+
+.raids > .raid-list .raid-description {
+    color: #c4c4c4;
+}
