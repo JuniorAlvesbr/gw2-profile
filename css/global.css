@@ -7,9 +7,16 @@ body {
 }
 
 .background {
-    background: url("../image/xera-background.jpg") no-repeat;
-    background-position: center;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
+    background: url('../image/xera-background.jpg') no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     position: fixed;
+    filter: grayscale(0.4);
+}
+
+.content {
+    position: absolute;
+    width: 99vw;
 }
