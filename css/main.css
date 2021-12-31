@@ -4,5 +4,25 @@
 }
 
 .main > .raid-wrapper {
+    background-color: rgba(0,0,0,0.9);
+    padding: 0.8rem;
+}
+
+.main > .raid-wrapper .title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main > .raid-wrapper .raid-content {
     display: flex;
+    justify-content: space-between;
+    min-width: 550px;
+}
+
+@media (max-width: 550px) {
+    .main > .raid-wrapper .raid-content {
+        display: block;
+        min-width: 0;
+    }
 }
