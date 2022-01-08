@@ -4,14 +4,22 @@
 }
 
 .main > .raid-wrapper {
-    background-color: rgba(0,0,0,0.9);
+    background-color: #2f3136;
     padding: 0.8rem;
+    box-shadow: 2px 3px 15px -2px #000000;
+}
+
+.main > .raid-wrapper .title-wrapper {
+    background-color: #26292e;
+    width: 100%;
+    height: 3rem;
 }
 
 .main > .raid-wrapper .title {
     font-size: 1.2rem;
     text-transform: uppercase;
     text-align: center;
+    line-height: 3rem;
 }
 
 .main > .raid-wrapper .raid-content {

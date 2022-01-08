@@ -25,13 +25,11 @@
     <div class="content">
         <header class="header">
             <form class="form" data-js="form">
-                <label class="input-label">
-                    Insira sua
-                    <a href="https://account.arena.net/applications" target="_blank">API-KEY</a>
-                    do Guild Wars 2
-                </label>
                 <div class="input-wrapper">
-                    <input type="text" class="input" maxlength="72" name="inputAPI">
+                    <a href="https://account.arena.net/applications" class="link" target="_blank"
+                        rel="noopener noreferrer">API-KEY</a>
+                    <input type="text" class="input" maxlength="72" name="inputAPI" autofocus
+                        placeholder="Insira aqui a sua API-KEY do Guild Wars 2">
                     <button class=" button">ok</button>
                 </div>
             </form>
@@ -39,7 +37,9 @@
 
         <main class="main">
             <div class="raid-wrapper">
-                <h2 class="title">Raids</h2>
+                <div class="title-wrapper">
+                    <h2 class="title">Raids</h2>
+                </div>
                 <div class="raid-content">
                     <article class="raids">
                         <dl class="raid-list">
