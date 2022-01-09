@@ -9,7 +9,7 @@
 
 .header .input-wrapper {
     background-color: white;
-    width: 30rem;
+    width: 38rem;
     height: 2rem;
     padding: 5px;
     border-radius: 10px;
@@ -46,7 +46,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 620px) {
     .header .form > .input-wrapper {
         width: 90vw;
     }

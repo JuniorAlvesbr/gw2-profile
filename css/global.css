@@ -22,7 +22,7 @@ body {
     width: 99vw;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 620px) {
     .background {
         background: url('../image/gw2-mobile.webp')
     }
