@@ -4,6 +4,7 @@
 }
 
 .main > .raid-wrapper {
+    display: none;
     background-color: #2f3136;
     padding: 0.8rem;
     box-shadow: 2px 3px 15px -2px #000000;

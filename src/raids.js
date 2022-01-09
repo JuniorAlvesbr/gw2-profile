@@ -1,3 +1,4 @@
+const $raidWrapper = document.querySelector('[data-js="raidWrapper"]')
 const $raidDescriptionList = document.querySelectorAll('[data-value="raidDescriptionList"]')
 const $raidWing1 = document.querySelector('[data-title="wing1"]')
 const $wing1 = document.querySelectorAll('[data-wing="wing1"]')
@@ -30,6 +31,8 @@ const raidIsDone = (raidWing, wing) => {
     }
 }
 
+const showRaidWrapper = () => $raidWrapper.style.display = 'block'
+
 const raidDone = () => {
     raidIsDone($raidWing1, $wing1)
     raidIsDone($raidWing2, $wing2)
@@ -58,6 +61,7 @@ const addCheckIcon = (deadBossList) => {
     })
 
     raidDone()
+    showRaidWrapper()
 }
 
 const raids = async APIKEY => {
