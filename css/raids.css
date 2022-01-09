@@ -1,4 +1,30 @@
-.raids > .raid-list {
+.raid-wrapper {
+    display: none;
+    background-color: #2f3136;
+    padding: 0.8rem;
+    box-shadow: 2px 3px 15px -2px #000000;
+}
+
+.raid-wrapper > .title-wrapper {
+    background-color: #26292e;
+    width: 100%;
+    height: 3rem;
+}
+
+.raid-wrapper > .title-wrapper .title {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 3rem;
+}
+
+.raid-wrapper > .raid-content {
+    display: flex;
+    justify-content: space-between;
+    min-width: 550px;
+}
+
+.raid-wrapper .raids > .raid-list {
     margin-top: 1.2rem;
 }
 
@@ -9,4 +35,11 @@
 
 .raids > .raid-list .raid-description {
     color: #ddd;
+}
+
+@media (max-width: 620px) {
+    .raid-wrapper > .raid-content {
+        display: block;
+        min-width: 0;
+    }
 }
