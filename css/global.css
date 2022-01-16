@@ -19,7 +19,7 @@ body {
 
 .content {
     position: absolute;
-    width: 99vw;
+    width: 98vw;
 }
 
 @media (max-width: 620px) {

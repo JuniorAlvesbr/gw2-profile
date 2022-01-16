@@ -1,22 +1,24 @@
 const $form = document.querySelector('[data-js="form"]')
 const $loading = document.querySelector('[data-loading="loading"]')
 
+const activeLoading = () => $loading.classList.add('-active')
+const desactiveLoading = () => $loading.classList.remove('-active')
+
 const getApiKeyFromLocalStorage = () => {
     const APIKEY = localStorage.getItem('apikey')
     $form.inputAPI.value = APIKEY
 }
 
-const showLoading = () => $loading.classList.toggle('-active')
-
 $form.addEventListener('submit', async event => {
     event.preventDefault()
-    showLoading()
+    activeLoading()
 
     const APIKEY = event.target.inputAPI.value
     localStorage.setItem('apikey', APIKEY)
 
     await raids(APIKEY)
-    showLoading()
+
+    desactiveLoading()
 })
 
 getApiKeyFromLocalStorage()

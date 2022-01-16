@@ -37,6 +37,12 @@
     color: #ddd;
 }
 
+@media (max-width: 1400px) {
+    .raids > .raid-list .raid-description {
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width: 620px) {
     .raid-wrapper > .raid-content {
         display: block;
