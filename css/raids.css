@@ -5,6 +5,10 @@
     box-shadow: 2px 3px 15px -2px #000000;
 }
 
+.raid-wrapper.-active {
+    display: block;
+}
+
 .raid-wrapper > .title-wrapper {
     background-color: #26292e;
     width: 100%;

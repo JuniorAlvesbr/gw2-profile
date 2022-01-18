@@ -28,10 +28,13 @@ const raidIsDone = (raidWing, wing) => {
     if (isDone) {
         raidWing.classList.remove('fa-times-circle')
         raidWing.classList.add('fa-check-circle')
+        return
     }
+
+    raidWing.classList.remove('fa-check-circle')
+    raidWing.classList.add('fa-times-circle')
 }
 
-const showRaidWrapper = () => $raidWrapper.style.display = 'block'
 
 const raidDone = () => {
     raidIsDone($raidWing1, $wing1)
@@ -42,6 +45,8 @@ const raidDone = () => {
     raidIsDone($raidWing6, $wing6)
     raidIsDone($raidWing7, $wing7)
 }
+
+const showRaidWrapper = () => $raidWrapper.classList.add('-active')
 
 const addCheckIcon = (deadBossList) => {
 

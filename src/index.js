@@ -9,9 +9,19 @@ const getApiKeyFromLocalStorage = () => {
     $form.inputAPI.value = APIKEY
 }
 
-$form.addEventListener('submit', async event => {
-    event.preventDefault()
+const showRaids = async (APIKEY) => {
     activeLoading()
+
+    localStorage.setItem('apikey', APIKEY)
+
+    await raids(APIKEY)
+
+    desactiveLoading()
+}
+
+
+$form.addEventListener('submit', event => {
+    event.preventDefault()
 
     const APIKEY = event.target.inputAPI.value
 
@@ -20,11 +30,7 @@ $form.addEventListener('submit', async event => {
         return
     }
 
-    localStorage.setItem('apikey', APIKEY)
-
-    await raids(APIKEY)
-
-    desactiveLoading()
+    showRaids(APIKEY)
 })
 
 getApiKeyFromLocalStorage()
