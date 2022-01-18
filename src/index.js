@@ -14,6 +14,12 @@ $form.addEventListener('submit', async event => {
     activeLoading()
 
     const APIKEY = event.target.inputAPI.value
+
+    if (!APIKEY) {
+        alert("Por favor Insira sua API-KEY")
+        return
+    }
+
     localStorage.setItem('apikey', APIKEY)
 
     await raids(APIKEY)
